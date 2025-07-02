@@ -114,6 +114,7 @@ body {
               line-height: 1.2rem;
             }
           }
+
         }
 
         & p {
@@ -133,6 +134,8 @@ body {
       padding: .5rem;
       border-radius: 1rem;
       gap: .5rem;
+      display: none;
+      transition: 0.3s ease;
 
       & span {
         flex: 1;

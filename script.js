@@ -7,7 +7,7 @@ const list = document.querySelector(".list-wrapper")
 form.addEventListener("submit", (event) => {
   event.preventDefault() //Avoid the reload of the page
   const value = input.value.trim() //Access the value of the input & removes the spaces 
-  if(value === "") return alert("Digite um item válido") //Checks if there's any empty spaces
+  if (value === "") return alert("Digite um item válido") //Checks if there's any empty spaces
 
   const li = document.createElement("li") //Creates the <li>
 
@@ -24,6 +24,7 @@ form.addEventListener("submit", (event) => {
   bin.src = "./assets/bin.svg"
   bin.alt = "Bin-symbol"
   bin.classList.add("delete-item")
+  bin.style.cursor = "pointer";
 
   //Adds everything to li
   li.appendChild(checkbox)
@@ -50,8 +51,6 @@ function showAlert(message) {
 
   alertText.textContent = message
   alertBox.style.display = "flex"
+  setTimeout(() => alertBox.style.opacity = "0", 1500); // Ease fade
 
-  setTimeout(()=> {
-    alertBox.style.display = "none"
-  }, 2000)
 }
