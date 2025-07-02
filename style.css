@@ -142,3 +142,72 @@ body {
 
 
 }
+
+@media (width <=48em) {
+
+  body {
+
+    & .logo {
+      h1 {
+        font-size: 1rem;
+      }
+
+      img {
+        width: 1rem;
+      }
+    }
+
+    main {
+      header {
+        img {
+          width: .5rem;
+        }
+
+        h1 {
+          font-size: 1rem;
+        }
+      }
+
+      & form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        max-width: 20rem;
+        width: 100%;
+
+        & .input-wrapper {
+          max-width: 18rem;
+
+          & input {
+            display: flex;
+            align-items: baseline;
+            width: 100%;
+          }
+
+          & button {
+            font-size: 0.6rem;
+          }
+        }
+
+        & .list-wrapper {
+          width: 100%;
+          font-size: .875rem;
+        }
+      }
+
+      .alert-message {
+        font-size: 0.875rem;
+        max-width: 19rem;
+        padding: 0.3rem;
+        width: 100%;
+      }
+    }
+
+
+
+
+
+  }
+
+}
