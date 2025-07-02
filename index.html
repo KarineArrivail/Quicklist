@@ -14,22 +14,29 @@
 </head>
 
 <body>
-  <header>
+  <div class="logo">
     <img src="./assets/logo.svg" alt="Logo">
     <h1>quicklist</h1>
-  </header>
+  </div>
 
   <main>
-    <a href="#" class="btn-back">
-      <img src="./assets/arrow-left.svg" alt="Back symbol">
-      Voltar
-    </a>
-
-    <h1>Compras da semana</h1>
+    <header>
+      <a href="#" class="back">
+        <img src="./assets/arrow-left.svg" alt="Back symbol">
+        Voltar
+      </a>
+      <h1>Compras da semana</h1>
+    </header>
 
     <form>
+      <div class="input-wrapper">
+        <input type="text" placeholder="Adicione um novo item">
+        <button type="submit">
+          <span>Adicionar item</span>
+        </button>
+      </div>
 
-      <ul class="shopping-list">
+      <ul class="list-wrapper">
         <li>
           <input type="checkbox">
           <p>Pão de forma</p>
@@ -54,7 +61,6 @@
           <img src="./assets/bin.svg" alt="Bin symbol">
         </li>
       </ul>
-
     </form>
 
     <div class="alert-message">
@@ -63,19 +69,6 @@
       <img src="./assets/xsymbol.svg" alt="exit symbol">
     </div>
   </main>
-
-
-
-
-
-
-
-
-
-
-
-
-
   <script src="script.js"></script>
 </body>
 

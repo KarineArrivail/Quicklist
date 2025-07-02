@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'inter', sans-serif;
+  background-color: #F4F5FB;
+
+  & .logo {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    gap: .5rem;
+    width: 1.9rem;
+  }
+
+  & main {
+    margin-top: 1rem;
+
+    & header {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+
+      & h1 {
+        font-size: 1.5rem;
+      }
+
+      & a {
+        display: flex;
+        gap: .5rem;
+        align-items: center;
+        text-decoration: none;
+        color: inherit;
+        font-size: .9rem;
+        color: #A52C6B;
+      }
+
+      & img {
+        width: 1rem;
+        text-decoration: none;
+      }
+    }
+
+    form {
+      & .input-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        gap: 1.5rem;
+
+        & input[type="text"] {
+          margin-top: 1rem;
+          width: 70%;
+          border: 1.5px solid #D1D5DB;
+          border-radius: .5rem;
+          padding: .5rem;
+          font: #001486;
+
+        }
+
+        & button {
+          font-family: 'inter', sans-serif;
+          color: white;
+          background-color: #A52C6B;
+          width: 30%;
+          height: 2rem;
+          border: none;
+          border-radius: .8rem;
+        }
+      }
+
+      & .list-wrapper {
+        & li {
+          display: flex;
+          justify-content: space-between;
+          gap: .5rem;
+          margin-top: 1rem;
+          list-style: none;
+          padding: .8rem;
+          width: 32rem;
+          background-color: #FFFFFF;
+          border-radius: .5rem;
+
+          & input[type="checkbox"] {
+            appearance: none;
+            width: 1.2rem;
+            height: 1.2rem;
+            border: 1px solid #D1D5DB;
+            border-radius: 5rem;
+            cursor: pointer;
+            position: relative;
+            background-color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &:checked {
+              background-color: #A52C6B;
+            }
+
+            &:checked::after {
+              content: "✔";
+              color: white;
+              font-size: 0.8rem;
+              line-height: 1.2rem;
+            }
+          }
+        }
+
+        & p {
+          flex: 1;
+        }
+      }
+
+    }
+
+    & .alert-message {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 1rem;
+      width: 100%;
+      background-color: #C93847;
+      color: white;
+      padding: .5rem;
+      border-radius: 1rem;
+      gap: .5rem;
+
+      & span {
+        flex: 1;
+      }
+    }
+  }
+
+
+}
