@@ -55,6 +55,7 @@ body {
         justify-content: space-between;
         align-items: baseline;
         gap: 1.5rem;
+        width: 40rem;
 
         & input[type="text"] {
           margin-top: 1rem;
@@ -85,7 +86,7 @@ body {
           margin-top: 1rem;
           list-style: none;
           padding: .8rem;
-          width: 32rem;
+          width: 100%;
           background-color: #FFFFFF;
           border-radius: .5rem;
 
