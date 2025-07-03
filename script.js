@@ -44,13 +44,33 @@ form.addEventListener("submit", (event) => {
   })
 })
 
-//Function to show the removed item alert
+
 function showAlert(message) {
-  const alertBox = document.querySelector(".alert-message")
-  const alertText = alertBox.querySelector("span")
+  const alertBox = document.querySelector(".alert-message");
+  const alertText = alertBox.querySelector("span");
 
-  alertText.textContent = message
-  alertBox.style.display = "flex"
-  setTimeout(() => alertBox.style.opacity = "0", 1500); // Ease fade
+  alertText.textContent = message;
 
+  //Shows the alert message again
+  alertBox.style.display = "flex";
+
+  // Pushes the animation to start again
+  alertBox.style.opacity = "0";
+
+  //Make sure the animation works
+  setTimeout(() => {
+    alertBox.style.opacity = "1";
+  }, 10); // Delay
+
+  // Fades after 1.5s
+  setTimeout(() => {
+    alertBox.style.opacity = "0";
+  }, 1500);
+
+  //Hides 
+  setTimeout(() => {
+    alertBox.style.display = "none";
+  }, 1800);
 }
+
+
